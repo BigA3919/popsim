@@ -10,10 +10,10 @@ public class Rabbit extends Animal{
 		if(reproductionClock > 2) {
 			gameloop.news.push("New Rabbit");
 		}
-		int tempx = (int)(Math.random() * 7);
-		int tempy = (int)(Math.random() * 7);
-		currx += (tempx-3);
-		curry += (tempy-3);
+		int tempx = (int)(Math.random() * 3);
+		int tempy = (int)(Math.random() * 3);
+		currx += (tempx-1);
+		curry += (tempy-1);
 		if(currx > gameloop.MAX_X) currx -= gameloop.MAX_X;
 		if(currx < 0) currx += gameloop.MAX_X;
 		if(curry > gameloop.MAX_Y) curry -= gameloop.MAX_Y;

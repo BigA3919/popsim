@@ -1,9 +1,9 @@
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 public class gameloop {
-	public static final int MAX_X = 50;
-	public static final int MAX_Y = 20;
-	public static final int ANIMAL_COUNT = 20;
+	public static final int MAX_X = 20;
+	public static final int MAX_Y = 10;
+	public static final int ANIMAL_COUNT = 30;
 	public static ArrayList<Rabbit> rabbits = new ArrayList<Rabbit>();
 	public static ArrayList<Fox> foxes = new ArrayList<Fox>();
 	public static Stack<String> news = new Stack<String>();
