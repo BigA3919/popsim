@@ -6,7 +6,7 @@ public class Rabbit extends Animal{
 		reproductionClock = 0;
 	}
 	
-	public void move(
+	public void move() {
 		if(reproductionClock > 5) {
 			
 		}
