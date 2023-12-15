@@ -1,14 +1,13 @@
 
-public class Rabbit extends Animal{
-	public int reproductionClock;
-	public Rabbit() {
+public class Fox extends Animal {
+	public int Lasteaten;
+	public Fox() {
 		super();
-		reproductionClock = 0;
+		Lasteaten = 0;
 	}
-	
 	public void move() {
-		if(reproductionClock > 2) {
-			gameloop.news.push("New Rabbit");
+		if(Lasteaten > 2) {
+			gameloop.news.push("Dead Fox");
 		}
 		int tempx = (int)(Math.random() * 7);
 		int tempy = (int)(Math.random() * 7);
@@ -18,8 +17,8 @@ public class Rabbit extends Animal{
 		if(currx < 0) currx += gameloop.MAX_X;
 		if(curry > gameloop.MAX_Y) curry -= gameloop.MAX_Y;
 		if(curry < 0) curry += gameloop.MAX_Y;
-		gameloop.pos[currx][curry].addRabbit();
-		reproductionClock++;
-			
+		//reproductionClock++;
+		gameloop.pos[currx][curry].addFox(this);
+		Lasteaten++;
 	}
 }
